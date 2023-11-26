@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  body {
+    @apply text-sm;
+  }
+
+  .t-form {
+    @apply text-sm px-4 py-2 focus:ring-neutral-900 focus:border-neutral-900 block w-full shadow-sm rounded-md;
+  }
+
+  .t-form-base {
+    @apply border-2 border-gray-300 dark:border-neutral-700 bg-white dark:bg-neutral-900;
+  }
+
+  .t-card-big {
+    @apply mt-8 p-8 shadow-sm border border-neutral-300 dark:border-neutral-800 bg-neutral-200 dark:bg-neutral-900 rounded-lg;
+  }
+}
